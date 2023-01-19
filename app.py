@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+import numpy
 import nltk
 import pickle
 from nltk.corpus import stopwords
