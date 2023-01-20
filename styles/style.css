@@ -51,6 +51,20 @@ a {
 
 main {
   min-height: 70vh;
+  text-align: center;
+}
+
+form div {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
 }
 
 button {
