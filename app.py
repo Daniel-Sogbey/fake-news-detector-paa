@@ -23,9 +23,9 @@ def predict(text):
     review = [ps.stem(word) for word in review if not word in stopwords.words('english')]
     review = ' '.join(review)
     review_vect = tfidfvect.transform([review]).toarray()
-    print(model.predict(review_vect))
-    prediction = 'FAKE' if model.predict(review_vect) == 0 else 'REAL'
-    return prediction
+    # print(model.predict(review_vect))
+    # prediction = 'FAKE' if model.predict(review_vect) == 0 else 'REAL'
+    return "prediction"
 @app.route('/', methods=['POST'])
 def webapp():
     text = request.form['text']
