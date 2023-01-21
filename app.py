@@ -1,14 +1,14 @@
 from flask import Flask, render_template, request, jsonify
 import numpy
-import nltk
+# import nltk
 import pickle
-from nltk.corpus import stopwords
+# from nltk.corpus import stopwords
 import re
-from nltk.stem.porter import PorterStemmer
+# from nltk.stem.porter import PorterStemmer
 # app = Flask(__name__)
 app = Flask(__name__, template_folder='templates', static_folder='styles')
 
-ps = PorterStemmer()
+# ps = PorterStemmer()
 # Load model and vectorizer
 model = pickle.load(open('model2.pkl', 'rb'))
 tfidfvect = pickle.load(open('tfidfvect2.pkl', 'rb'))
