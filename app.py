@@ -5,8 +5,8 @@ import pickle
 # from nltk.corpus import stopwords
 import re
 # from nltk.stem.porter import PorterStemmer
-# app = Flask(__name__)
-app = Flask(__name__, template_folder='templates', static_folder='styles')
+app = Flask(__name__)
+# app = Flask(__name__, template_folder='templates', static_folder='styles')
 
 # ps = PorterStemmer()
 # Load model and vectorizer
