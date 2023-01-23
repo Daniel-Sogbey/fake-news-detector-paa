@@ -21,18 +21,14 @@
             <a href="" class="link">About Me</a>
           </li>
           <li>
-            <a href="" class="link">About The Project</a>
+            <a href="./about.html" class="link">About The Project</a>
           </li>
         </ul>
       </nav>
     </header>
     <br />
     <main>
-      <h2>
-        An implementation of the Passive-Aggressive Algorithm to detect fake
-        news.
-      </h2>
-      <p>Enter a sample newsfeed</p>
+      <p>Paste your news feed into the text box</p>
       <br />
       {% if result %}
       <p>
@@ -43,12 +39,7 @@
       <div class="container">
         <form action="/" method="POST">
           <div>
-            <textarea
-              rows="10"
-              name="text"
-              placeholder="Paste the news feed here"
-              required
-            >
+            <textarea rows="10" name="text" placeholder="" required>
 {{text}}</textarea
             >
             <br /><br />
@@ -60,6 +51,10 @@
     </main>
 
     <footer>
+      <p>
+        An implementation of the Passive-Aggressive Algorithm to detect fake
+        news.
+      </p>
       <p>Copyright (c) 2023</p>
     </footer>
   </body>
